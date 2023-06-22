@@ -1,0 +1,88 @@
+<div class="stepper-section ">
+    <div class="container">
+        <h1 class="text-color title">Erzähl uns etwas über dein Velo.</h1>
+
+        <mat-stepper orientation="vertical" [linear]="isLinear" #stepper>
+            <mat-step [stepControl]="firstFormGroup">
+                <form class="stepper-form" [formGroup]="firstFormGroup">
+                    <sup>Felder mit einem * sind Pflichtfelder</sup>
+                    <mat-form-field>
+                        <mat-label>Name</mat-label>
+                        <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+                    </mat-form-field>
+                </form>
+                <div class="next-btn">
+                    <span>
+                        <button mat-button matStepperNext>Next step <i class="bi bi-arrow-down"></i></button>
+                    </span>
+                </div>
+            </mat-step>
+            <mat-step [stepControl]="secondFormGroup">
+                <form class="stepper-form" [formGroup]="secondFormGroup">
+                    <mat-form-field>
+                        <mat-label>Address</mat-label>
+                        <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY" required>
+                    </mat-form-field>
+                </form>
+                <div class="next-btn">
+                    <span>
+                        <button mat-button matStepperNext>Next step <i class="bi bi-arrow-down"></i></button>
+                    </span>
+                </div>
+            </mat-step>
+            <mat-step [stepControl]="secondFormGroup">
+                <form class="stepper-form" [formGroup]="secondFormGroup">
+                    <mat-form-field>
+                        <mat-label>Address</mat-label>
+                        <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY" required>
+                    </mat-form-field>
+                </form>
+                <div class="next-btn">
+                    <span>
+                        <button mat-button matStepperNext>Next step <i class="bi bi-arrow-down"></i></button>
+                    </span>
+                </div>
+            </mat-step>
+            <mat-step [stepControl]="secondFormGroup">
+                <form class="stepper-form" [formGroup]="secondFormGroup">
+                    <mat-form-field>
+                        <mat-label>Address</mat-label>
+                        <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY" required>
+                    </mat-form-field>
+                </form>
+                <div class="next-btn">
+                    <span>
+                        <button mat-button matStepperNext>Next step <i class="bi bi-arrow-down"></i></button>
+                    </span>
+                </div>
+            </mat-step>
+            <mat-step [stepControl]="secondFormGroup">
+                <form class="stepper-form" [formGroup]="secondFormGroup">
+                    <mat-form-field>
+                        <mat-label>Address</mat-label>
+                        <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY" required>
+                    </mat-form-field>
+                </form>
+                <div class="next-btn">
+                    <span>
+                        <button mat-button matStepperNext>Servicedaten hochladen <br />
+                            und Angebote erhalten</button>
+                    </span>
+                </div>
+            </mat-step>
+
+            <!-- <mat-step>
+                <p>You are now done.</p>
+                <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button (click)="stepper.reset()">Reset</button>
+                </div>
+            </mat-step> -->
+        </mat-stepper>
+
+
+        <!-- Copyright 2023 Google LLC. All Rights Reserved.
+              Use of this source code is governed by an MIT-style license that
+              can be found in the LICENSE file at https://angular.io/license -->
+    </div>
+</div>

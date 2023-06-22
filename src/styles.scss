@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "care pro", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+@font-face {
+  font-family: "care pro";
+  src: url("../src/assets/font/Cera\ Pro\ Light.ttf");
+}
+
+.text-color {
+  color: #ff5e3a;
+}
+
+.mat-step-header {
+  display: inline-block !important;
+  border-radius: 50px !important;
+  background-color: transparent !important;
+}
+
+.mat-step-header .mat-step-icon-selected {
+  background-color: #ff5e3a !important;
+  color: #ff5e3a !important;
+}
+
+.mat-step-header .mat-step-icon {
+  background-color: transparent;
+  color: transparent;
+  border: 3px solid #ff5e3a;
+}
+
+.mat-vertical-content-container {
+  margin-left: 35px !important;
+}
+
+.mat-stepper-vertical-line::before {
+  border-left-width: 3px !important;
+  border-left-color: #ff5e3a !important;
+}
+
+.mat-vertical-stepper-header {
+  padding: 15px 24px;
+  padding-bottom: 10px;
+}
+
+.mat-step-header:hover:not([aria-disabled]), .mat-step-header:hover[aria-disabled=false] {
+    background-color: transparent !important;
+}
+
+.mat-step-icon-content{
+    display: none !important;
+}
+
+// .mat-vertical-stepper-content{
+//     position: absolute;
+//     top: 0;
+// }
+
+.mdc-button__label{
+    color: #fff !important;
+}
